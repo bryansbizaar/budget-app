@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Monthly Budget</h1>
+
+      <!-- Income Section -->
+      <div class="income-section">
+        <h2>Income</h2>
+        <div class="income-wrapper">
+          <span class="income-currency">$</span>
+          <input
+            type="number"
+            id="monthly-income"
+            class="income-input"
+            placeholder="0"
+            min="0"
+            step="1"
+            aria-label="Monthly income amount"
+          />
+        </div>
+      </div>
+
+      <!-- Fixed Expenses Section -->
+      <div class="categories-section">
+        <h2>Fixed Expenses</h2>
+        <p class="section-description">
+          Essential expenses that stay the same each month
+        </p>
+
+        <div id="fixed-categories" class="categories-container">
+          <!-- Fixed categories will be added here dynamically -->
+        </div>
+
+        <div class="add-category-container">
+          <button
+            id="add-fixed-btn"
+            class="add-category-btn"
+            aria-label="Add fixed expense category"
+          >
+            + Add Fixed Expense
+          </button>
+        </div>
+      </div>
+
+      <!-- Discretionary Spending Section -->
+      <div class="categories-section">
+        <h2>Discretionary Spending</h2>
+        <p class="section-description">
+          Variable expenses and lifestyle choices
+        </p>
+
+        <div id="discretionary-categories" class="categories-container">
+          <!-- Discretionary categories will be added here dynamically -->
+        </div>
+
+        <div class="add-category-container">
+          <button
+            id="add-discretionary-btn"
+            class="add-category-btn"
+            aria-label="Add discretionary spending category"
+          >
+            + Add Discretionary Item
+          </button>
+        </div>
+      </div>
+
+      <!-- Budget Summary -->
+      <div class="summary">
+        <h2>Budget Summary</h2>
+        <div class="summary-row">
+          <span>Monthly Income:</span>
+          <span id="summary-income">$0</span>
+        </div>
+        <div class="summary-row">
+          <span>Fixed Expenses:</span>
+          <span id="summary-fixed">$0</span>
+        </div>
+        <div class="summary-row">
+          <span>Discretionary Spending:</span>
+          <span id="summary-discretionary">$0</span>
+        </div>
+        <div class="summary-row">
+          <span>Total Allocated:</span>
+          <span id="summary-total">$0</span>
+        </div>
+        <div class="summary-row total" id="remaining-row">
+          <span>Remaining:</span>
+          <span id="summary-remaining">$0</span>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
