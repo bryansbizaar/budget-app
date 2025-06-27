@@ -39,6 +39,10 @@ budget-app/
 └── styles.css      # CSS styling
 ```
 
+## Live Demo
+
+[View Live Demo](https://bryansbizaar.github.io/budget-app/)
+
 ## Usage
 
 ### Setting Up Your Budget
