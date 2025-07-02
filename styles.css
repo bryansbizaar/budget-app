@@ -3,15 +3,15 @@
   --primary-color: #007bff;
   --success-color: #28a745;
   --danger-color: #dc3545;
-  --warning-color: #ffc107;
-  --light-bg: #f8f9fa;
+  --warning-color: #383631;
+  --light-bg: #dee8f3;
   --border-color: #e9ecef;
   --text-primary: #333;
   --text-secondary: #495057;
   --text-muted: #6c757d;
   --transition: 0.2s ease;
-  --border-radius: 6px;
-  --border-radius-lg: 8px;
+  --border-radius: 10px;
+  --border-radius-lg: 12px;
   --spacing-sm: 8px;
   --spacing-md: 12px;
   --spacing-lg: 20px;
@@ -55,7 +55,7 @@ h1 {
 
 /* Income section */
 .income-section {
-  background: var(--light-bg);
+  background: linear-gradient(135deg, #c1defa 0%, #f0f8ff 100%);
   padding: var(--spacing-xl);
   border-radius: var(--border-radius-lg);
   margin-bottom: var(--spacing-xxl);
@@ -76,7 +76,7 @@ h1 {
   background: white;
   padding: var(--spacing-sm);
   border-radius: var(--border-radius);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-width: 100%;
 }
 
@@ -265,7 +265,7 @@ h1 {
 
 /* Summary section */
 .summary {
-  background: linear-gradient(135deg, #e7f3ff 0%, #f0f8ff 100%);
+  background: linear-gradient(135deg, #c1defa 0%, #f0f8ff 100%);
   padding: var(--spacing-xl);
   border-radius: var(--border-radius-lg);
   margin-top: var(--spacing-xxl);
